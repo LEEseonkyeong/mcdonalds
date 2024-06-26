@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        html,
+        body {
+            font-family: 'KOTRA_GOTHIC';
+            color: black;
+        }
+
+        .list {
+            text-align: center;
+        }
+
+        .list li {
+            display: inline-block;
+        }
+
+        .list li a {
+            display: block;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .list li a::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: darkblue;
+            margin-left: 30px;
+        }
+
+        .list li:last-child a::after {
+            display: none;
+        }
+
+        .list li::before {
+            content: "a";
+            color: aqua;
+            font-size: 50px;
+        }
+
+
+
+
+
+
+        .list_1 {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .list_1 li {
+            display: inline-block;
+            width: 150px;
+
+        }
+
+        .list_1 li a {
+            display: block;
+            padding: 10px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .list_1 li a::before{
+            content: "|";
+            position: absolute;
+            left: 0;
+        }
+
+        .list_1 li:first-child a::before{
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+
+    <ul class="list_1">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+</body>
+
+</html>

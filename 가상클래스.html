@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        html,
+        body {
+            font-family: 'KOTRA_GOTHIC';
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+            /* border: 1px solid black; */
+        }
+
+        ul li a {
+            display: block;
+            padding: 10px 20px;
+            border: 2px solid red;
+        }
+
+        ul li a::before {
+            content: "★";
+            color: red;
+            font-size: 30px;
+        }
+
+        ul li a::after {
+            display: inline-block;
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: url("img/btn_delivery_04.png") no-repeat;
+        }
+
+        ul li::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 1px;
+            background-color: blue;
+        }
+
+        ul li::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 10px;
+            background-color: gold;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가상클래스 만들기</h1>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+</body>
+
+</html>

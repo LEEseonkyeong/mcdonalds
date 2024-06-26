@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            /* text-align: center; */
+            /* border: 1px solid red; */
+
+        }
+
+        a:first-child::before{
+            opacity: 0;
+        }
+
+        a:first-child{
+            padding-left: 50px;
+        }
+
+        a::before {
+            content: "|";
+            padding: 0 25px 0 0;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        html,
+        body {
+            font-family: 'KOTRA_GOTHIC';
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">menu01</a>
+    <a href="#">menu02</a>
+    <a href="#">menu03</a>
+    <a href="#">menu04</a>
+    <a href="#">menu05</a>
+</body>
+
+</html>
